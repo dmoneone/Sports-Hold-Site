@@ -1,0 +1,622 @@
+@import 'reset';
+
+a{
+   text-decoration: none;   
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@font-face {
+    font-family: TruenoLt; 
+    src: url(../fonts/TruenoLt.otf);
+}
+
+@font-face {
+    font-family: TruenoUltBlk; 
+    src: url(../fonts/TruenoUltBlk.otf);
+}
+
+@font-face {
+    font-family: TruenoBd; 
+    src: url(../fonts/TruenoBd.otf);
+}
+
+
+.header{
+    width: 100%;
+    .header-top{
+        background: #472424;
+        //height: 45px;
+        .header-holder{
+            width: 1110px;
+            margin: 0 auto;
+            .header-top-left{
+                width: 50%;
+                float: left;
+                .left-menu{
+                    float: left;
+                    .nav{
+                        li{
+                            display: inline-block;
+                            padding: 15px 0px 15px 0px;
+                            a{
+                                padding: 15px;
+                                font-family: TruenoLt;
+                                font-size: 13px;
+                                color: white;
+                                transition: all ease 0.3s;
+                                position: relative;
+                                z-index: 1;
+                                &:hover{
+                                    &:before{
+                                        height: 100%;
+                                    }
+                                }    
+                            }
+                            a::before{
+                                content:"";
+                                z-index: -1;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 0;
+                                background: #ff7373;
+                                transition: all ease 0.3s;
+                                
+                            }
+                        }
+                    }  
+                }
+            }
+            .header-top-right{
+                width: 50%;
+                float: right;
+                .right-menu{
+                    float: right;
+                    .nav{
+                        li{
+                            display: inline-block;
+                            padding: 15px 0px 15px 0px;
+                            img{
+                                width: 14px;
+                                padding-right: 5px;
+                            }
+                            span{
+                                font-family: TruenoLt;
+                                font-size: 13px;
+                                color: white;  
+                                a.items{
+                                    color: #dcc5b8;
+                                }
+                            }
+                            a{
+                                padding: 15px;
+                                font-family: TruenoLt;
+                                font-size: 13px;
+                                color: white;
+                                transition: all ease 0.3s;
+                                position: relative;
+                                z-index: 1;
+                                &:hover{
+                                    &:before{
+                                        height: 100%;
+                                    }
+                                }    
+                            }
+                            a::before{
+                                content:"";
+                                z-index: -1;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 0;
+                                background: #ff7373;
+                                transition: all ease 0.3s;                              
+                            }
+                        }
+                    }  
+                }               
+            }
+        }
+    }
+    .header-bottom{
+        //height: 75px;
+        background: #623232;
+        .header-holder{
+            width: 1110px;
+            margin: 0 auto;
+            .header-bottom-left{
+                width: 40%;
+                float: left;
+                .logo-wrap{
+                    margin-top: 20px;
+                    margin-left: 10px;
+                }
+            }
+            .header-bottom-right{
+                width: 60%;
+                float: right;
+                .main-menu{
+                    float: right;
+                    .main-nav{
+                        li{
+                            display: inline-block;
+                            padding: 30px 0px 30px 0px;
+                            a{
+                              font-family: TruenoLt;
+                              z-index: 1;
+                              font-size: 16px;
+                              color: white;  
+                              padding: 30px 15px 30px 15px;
+                              position: relative;
+                                &:hover{
+                                    &:after{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            a::after{
+                                content:"";
+                                position: absolute;
+                                width: 0;
+                                height: 4px;
+                                background: #ff7373;
+                                transition: all ease 0.4s;
+                                left: 0;
+                                bottom: 0;
+                            }
+                        }
+                    } 
+                }
+
+            } 
+        }
+        
+    }
+}
+
+.item-content{
+        width: 1110px;
+        margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background: #f0efee;
+    .banner-left{
+        width: 50%;
+        float: left;
+        height: -webkit-fill-available;
+        .banner-img-wrap{
+           position: relative;
+           left: 0;
+           top: 0;
+            img{
+               position: absolute;
+               left: -430px;
+               top: -90px;
+            }  
+         }
+    }
+    
+    .banner-right{
+        float: right;
+        width: 50%;
+        height: -webkit-fill-available;
+        .banner-content{
+            float: right;
+            width: 540px;
+            span{
+                display: block;
+            }
+            span.nike-air-cost{
+                font-family: TruenoLt;
+                font-size: 30px;
+                color: #623232;
+                margin-top: 130px;
+            }
+            h2.nike-air-title{
+                font-family: TruenoUltBlk;
+                font-size: 70px;
+                color: #623232;
+                margin-top: 20px;
+            }
+            span.nike-air-variants{
+                font-family: TruenoUltBlk;
+                font-size: 50px;
+                color: #ff7373;
+                margin-top: 20px;
+            }
+            p.descr{
+                font-family: TruenoLt;
+                font-size: 16px;
+                color: #8a8784;
+                line-height: 1.5;
+                margin-top: 30px;
+                width: 405px;
+            }
+            .browse-variats{
+                font-family: TruenoBd;
+                width: 255px;
+                height: 50px;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                background: #ff7373;
+                font-size: 16px;
+                color: white;
+                margin-top: 35px;
+            }
+
+
+
+        } 
+    }
+    
+}
+
+.item-content{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.features{
+    margin-top: 50px;
+    width: 100%;
+    .features-left{
+        width: 50%;
+        float: left;
+        .block{
+           width: 540px;
+           float: left;
+           height: 540px;
+           background: url(../img/1img.png) no-repeat center;
+           background-size: contain; 
+           position: relative;
+            .span-wrap{
+                    span{
+                        font-family: TruenoLt;
+                        font-size: 30px;
+                        color: white;
+                        display: block;
+                        text-align: center;
+                        padding-top: 45px;
+                        &:last-child{
+                            padding-top: 15px;
+                            color: #4bd8cd;
+                            font-family: TruenoBd;
+                        }
+              }
+            }
+            .view-collection-button{
+                font-size: 16px;
+                color: black;
+                font-family: TruenoBd;
+                outline: none;
+                border: 0;
+                width: 215px;
+                height: 50px;
+                background: #4bd8cd;
+                margin: 0 auto;
+                margin-top: 323px;
+                display: block;
+                cursor: pointer;
+            }
+            .part-for-img1{
+                position: absolute;
+                left: -17px;
+                top: 230px;
+            }
+        }
+    }
+    
+    .features-right{
+        width: 50%;
+        float: right;
+        .features-right-top{
+           .block{
+               float: right;
+               width: 540px; 
+               height: 250px;
+               background: #ff7373;
+               position: relative;
+               .img-abs{
+                    width: 200px;
+                    position: absolute;
+                    top: -16px;
+                    left: -14px;
+                       img{
+                           width: 200px;
+                       }
+               }
+               .inside-wrap{
+                   width: 260px;
+                   margin-left: 212px;
+                   .discover-button{
+                        font-size: 16px;
+                        font-family: TruenoBd;
+                        outline: none;
+                        border: 0;
+                        color: white;
+                        width: 150px;
+                        height: 50px;
+                        background: #623232;
+                        cursor: pointer;
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                   }
+                   .span-wrap{
+                           span{
+                               font-size: 30px;
+                               padding-top: 50px;
+                               color: white;
+                               font-family: TruenoLt;
+                               display: block;
+                               text-align: center;
+                               &:last-child{
+                                  font-family: TruenoBd; 
+                                   padding-top: 15px;
+                               }
+                           }
+                   }
+               }
+           }
+        }
+        .features-right-bottom{
+            margin-top: 33px;
+            .block{
+                width: 255px;
+                height: 255px;
+                background-size: contain; 
+                float: right;
+            }
+            .first-block{
+                background: url(../img/img3.png) no-repeat center;
+                .span-wrap{
+                    span{
+                        padding-top: 145px;
+                        font-size: 30px;
+                        color: white;
+                        font-family: TruenoLt;
+                        display: block;
+                        text-align: center;
+                        &:last-child{
+                            font-family: TruenoBd; 
+                            padding-top: 15px;
+                            color: #ff7373;
+                        }
+                    }
+                }
+                
+            }
+            
+            .second-block{
+                background: url(../img/img4.png) no-repeat center;
+                margin-right: 28px;
+                .span-wrap{
+                    span{
+                        padding-top: 35px;
+                        font-size: 30px;
+                        color: #6b7072;
+                        font-family: TruenoLt;
+                        display: block;
+                        text-align: center;
+                        &:last-child{
+                            font-family: TruenoBd; 
+                            padding-top: 15px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+               
+        }
+
+
+        
+    }
+}
+
+.products-wrap{
+    margin-top: 100px;
+    .tabs-buttons-wrap{
+        width: 450px;
+        margin: 0 auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        .tab-button{
+            font-size: 30px;
+            font-family: TruenoLt;
+            color: #bdb9b5;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            &:hover{
+                text-shadow: 1px 1px 5px #81939B;
+            }
+        } 
+        .button-new{
+            font-family: TruenoBd;
+            color: #623232;
+            
+        }
+    } 
+    
+    .tabs-wrap{
+        margin-top: 50px;
+        width: 1110px;
+        height: 730px;
+        overflow: hidden;
+        .tabs-line{
+            width: 3330px;
+            height: 730;
+            float: left;
+            
+            .tab{
+                width: 1110px;
+                height: 730px;
+                float: left;
+                .block-line-wrap{
+                    margin-top: 23px;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                    .product-block-with-sale{
+                        &:hover{
+                          border: 1px solid #8a8784;
+                            .inside-products-wrap{
+                                .sale-wrap{
+                                    transform: rotate(360deg);
+                                    transition: all ease 1s;
+                                }
+                                .top-part-of-product-block{
+                                    
+                                    .span-wrap{
+                                        span.product-price{
+                                            font-size: 30px;
+
+                                        }
+                                        span.product-old-price{
+                                            font-size: 12px;
+                                            padding-top: 7px;
+                                            
+                                        
+                                        } 
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    .product-block{
+                        float: left;
+                        margin-left: 23px;
+                        width: 195px;
+                        height: 290px;
+                        border: 1px solid #e0dfde;
+                        padding: 30px;
+                        position: relative;
+                        cursor: pointer;
+                        transition: all ease 0.3s;
+                        &:hover{
+                          border: 1px solid #8a8784;
+                        }
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                        .inside-products-wrap{
+                            .sale-wrap{
+                                position: absolute;
+                                top: 25px;
+                                right: 0;
+                                height: 30px;
+                                width: 60px;
+                                background: #ff7373;
+                                span{
+                                    font-family: TruenoBd;
+                                    color: white;
+                                    font-size: 16px;
+                                    display: block;
+                                    text-align: center;
+                                    margin-top: 5px;
+
+                                }
+                            }
+                            .part-of-product-block{
+                                width: 100%;
+                            }
+                            .top-part-of-product-block{
+                                height: 50px;
+                                .span-wrap{
+                                    
+                                    span{
+                                        font-family: TruenoLt;
+                                        display: block; 
+                                        transition: all ease 0.4s;
+                                    }
+                                    span.product-price{
+                                        font-size: 24px;
+                                        color: #ff7373;
+
+                                    }
+                                    span.product-price-without-sale{
+                                        color: #8a8784;
+;
+                                    }
+                                    span.product-old-price{
+                                        font-size: 16px;
+                                        padding-top: 10px;
+                                        color: #8a8784;
+                                        text-decoration: line-through; 
+                                    }
+                                }
+                            }
+
+                            .middle-part-of-product-block{
+                                padding-top: 7px;
+                                height: 100px;
+                                .img-wrap{
+                                    img{
+                                        width: 100%;
+                                        
+                                    }
+                                }
+                            }
+                            .bottom-part-of-product-block{
+                                height: 135px;
+                                position: relative;
+                                .span-wrap{
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    
+                                    span{
+                                        display: block;
+                                    }
+                                    span.male-female{
+                                        font-size: 16px;
+                                        color: #8a8784;
+                                        font-family: TruenoBd;
+                                    }
+                                    span.product-name{
+                                        font-size: 16px;
+                                        color: #8a8784;
+                                        font-family: TruenoLt;
+                                        padding-top: 14px;
+                                        line-height: 1.5;
+                                    }
+                                    span.product-id{
+                                        font-size: 13px;
+                                        color: #bdb9b5;
+                                        font-family: TruenoLt;
+                                        padding-top: 16px;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                
+              }
+            }
+        }
+    }
+    
+}
+
+
